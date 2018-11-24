@@ -108,7 +108,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 1
-  controlID: 47
+  controlID: 76
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 48
+  controlID: 77
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 12
+  controlID: 148
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,10 +228,10 @@ MonoBehaviour:
     y: 0
     width: 712
     height: 587
-  m_MinSize: {x: 204, y: 321}
-  m_MaxSize: {x: 4004, y: 8021}
+  m_MinSize: {x: 204, y: 342}
+  m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 49
+  controlID: 78
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,8 +277,8 @@ MonoBehaviour:
     y: 466
     width: 712
     height: 121
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 121}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -304,8 +304,8 @@ MonoBehaviour:
     y: 0
     width: 302
     height: 587
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -418,10 +418,10 @@ MonoBehaviour:
     height: 262
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 443}
-    m_SelectedIDs: 1e0c0000
-    m_LastClickedID: 3102
-    m_ExpandedIDs: e4fbffff000000001e0c0000900d0000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 320c0000
+    m_LastClickedID: 3122
+    m_ExpandedIDs: d6fbffff00000000320c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -482,20 +482,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Logic/Movement
+    - Assets/Logic/Entity
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Logic/Movement
+  - Assets/Logic/Entity
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\Jan Torrent\\Desktop\\Pr\xE0ctica1\\PracticaFirstPersonUML\\FirstPersonPractice1"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 320b0000
-    m_LastClickedID: 2866
-    m_ExpandedIDs: 000000004e0900009a090000dc0a000000ca9a3b
+    m_SelectedIDs: ee0a0000
+    m_LastClickedID: 2798
+    m_ExpandedIDs: 0000000060090000ac090000ee0a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -523,7 +523,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004e0900009a090000
+    m_ExpandedIDs: 0000000060090000ac090000ee0a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +575,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 147}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 --- !u!114 &17
@@ -641,11 +641,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.3074643, y: -0.3159663, z: 0.10904482, w: -0.89092094}
     speed: 2
-    m_Value: {x: -0.30746433, y: -0.31596634, z: 0.10904483, w: -0.890921}
+    m_Value: {x: -0.3074643, y: -0.3159663, z: 0.10904482, w: -0.89092094}
   m_Size:
-    m_Target: 4.0416584
+    m_Target: 4.3416586
     speed: 2
-    m_Value: 12.384358
+    m_Value: 4.3416586
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
-  m_ViewIsLockedToObject: 1
+  m_ViewIsLockedToObject: 0
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
