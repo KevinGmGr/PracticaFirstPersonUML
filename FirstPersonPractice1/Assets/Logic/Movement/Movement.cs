@@ -5,8 +5,12 @@ using UnityEngine;
 public abstract class Movement : MonoBehaviour {
 
     protected Vector3 Direction = new Vector3();
+    protected float CurrentJumpForce = 0;
+    [SerializeField]
     protected float Speed;
-    protected float JumpForce;
+    [SerializeField]
+    protected float JumpForce = 500;
+    [SerializeField]
     protected float gravity = -9.8f;
 	// Use this for initialization
 	void Start () {

@@ -10,7 +10,6 @@ public class PlayerMovement : Movement {
 	void Start () {
         charRefernce = this.GetComponent<CharacterController>();
         Speed = 10f;
-        JumpForce = 500f;
 
     }
 	
@@ -20,23 +19,24 @@ public class PlayerMovement : Movement {
 	}
     public override void Move()
     {
-        if (Input.GetKeyDown(KeyCode.Space)&&charRefernce.isGrounded == true)
+        if (Input.GetAxis ("Jump") != 0 &&charRefernce.isGrounded == true)
         {
-            Direction.y = JumpForce;
-            Direction.y = Direction.y - (gravity * Time.deltaTime);
+            CurrentJumpForce = JumpForce;          
+        }
+        else if (charRefernce.isGrounded == true)
+        {
+            CurrentJumpForce = 0;
         }
         else
         {
-            Direction.y = Direction.y - (gravity * Time.deltaTime);
+            CurrentJumpForce += (gravity * Time.deltaTime);
         }
-        if (charRefernce.isGrounded == true)
-        {
-            Direction.y = 0;
-        }
+       
 
-        Direction = new Vector3(Input.GetAxis("Horizontal"), Direction.y, Input.GetAxis("Vertical"));
-        Direction = transform.TransformDirection(Direction);
+        Direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Direction = transform.TransformDirection(Direction);        
         Direction *= Speed;
+        Direction += Vector3.up * CurrentJumpForce;
         charRefernce.Move(Direction * Time.deltaTime);
     
 
