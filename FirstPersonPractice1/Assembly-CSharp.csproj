@@ -65,6 +65,8 @@
     <Compile Include="Assets\Logic\Entity\Entity_Script.cs" />
     <Compile Include="Assets\Logic\Movement\Movement.cs" />
     <Compile Include="Assets\Logic\Movement\PlayerMovement.cs" />
+    <Compile Include="Assets\Logic\WEAPON\Weapon.cs" />
+    <Compile Include="Assets\Logic\WEAPON\WeaponPlayer.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Jan Torrent/Desktop/Pràctica1/PracticaFirstPersonUML/FirstPersonPractice1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
