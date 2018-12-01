@@ -7,10 +7,12 @@ public class Entity_Script : MonoBehaviour {
 	protected float HP;
 	protected float MaxHealth;
 	protected float Ammo;
-	protected float MaxAmmo;
+public float MaxAmmo;
 	protected float AmmoReload;
 	protected float MovAx;
 	protected float JumpAx;
+    protected float reloadTime = 1f;
+    protected float CurrentTime;
 
 	// Use this for initialization
 	void Start () {
@@ -37,4 +39,8 @@ public class Entity_Script : MonoBehaviour {
 	virtual public void Reload(){
 
 	}
+virtual public void  SetAmmo(float newAmmo)
+    {
+
+    }
 }

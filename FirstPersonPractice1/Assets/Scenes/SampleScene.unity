@@ -446,6 +446,8 @@ GameObject:
   - component: {fileID: 281609252}
   - component: {fileID: 281609250}
   - component: {fileID: 281609255}
+  - component: {fileID: 281609256}
+  - component: {fileID: 281609251}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -470,6 +472,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &281609251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281609249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b800f0720024654ea8ddd5f742df303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletref: {fileID: 0}
 --- !u!23 &281609252
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -540,6 +554,20 @@ MonoBehaviour:
   Speed: 0
   JumpForce: 10
   gravity: -9.8
+  Rotate: {x: 0, y: 0, z: 0}
+  RotateSpeed: 10
+--- !u!114 &281609256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281609249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25208d70ba559564c94114562c411f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxAmmo: 0
 --- !u!1 &282840810
 GameObject:
   m_ObjectHideFlags: 0

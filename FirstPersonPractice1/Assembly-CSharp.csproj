@@ -61,8 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Logic\Bullets\Bullet.cs" />
+    <Compile Include="Assets\Logic\Bullets\NormalbULLET.cs" />
     <Compile Include="Assets\Logic\Entity\Enemy_Script.cs" />
     <Compile Include="Assets\Logic\Entity\Entity_Script.cs" />
+    <Compile Include="Assets\Logic\Entity\Player\Palyer.cs" />
+    <Compile Include="Assets\Logic\Entity\Turret_Script.cs" />
     <Compile Include="Assets\Logic\Movement\Movement.cs" />
     <Compile Include="Assets\Logic\Movement\PlayerMovement.cs" />
     <Compile Include="Assets\Logic\WEAPON\Weapon.cs" />
