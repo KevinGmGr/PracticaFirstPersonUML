@@ -6,7 +6,9 @@ public class PlayerMovement : Movement {
 
 
     CharacterController charRefernce;
-	// Use this for initializationpuli
+    // Use this for initializationpuli
+    [SerializeField] Vector3 Rotate = new Vector3();
+    [SerializeField] float RotateSpeed = 10;
 	void Start () {
         charRefernce = this.GetComponent<CharacterController>();
         Speed = 10f;
@@ -31,8 +33,33 @@ public class PlayerMovement : Movement {
         {
             CurrentJumpForce += (gravity * Time.deltaTime);
         }
-       
 
+
+        Rotate = new Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
+        Rotate *= RotateSpeed;
+
+        /*  if (Rotate.y > 90)
+          {
+              Rotate.y = 90;
+
+          }
+          if(Rotate.y>-90){
+              Rotate.y = -90;
+          }*/
+        Rotate = Rotate + this.transform.GetChild(0).rotation.eulerAngles;
+
+         if (Rotate.y > 90)
+          {
+              Rotate.y = 90;
+
+          }
+          if(Rotate.y>-90){
+              Rotate.y = -90;
+          }
+
+        this.transform.GetChild(0).rotation = Quaternion.Euler(Rotate);
+
+        
         Direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         Direction = transform.TransformDirection(Direction);        
         Direction *= Speed;
