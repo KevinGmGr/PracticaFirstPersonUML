@@ -17,15 +17,15 @@ public class Turret_Script : Enemy_Script {
 		
         switch (currentstate)
         {
-            case Idle:
+            case TurretStates.Idle:
 
             break;
 
-            case Detected:
+            case TurretStates.Detected:
 
             break;
 
-            case Shooting:
+            case TurretStates.Shooting:
 
             break;
 
